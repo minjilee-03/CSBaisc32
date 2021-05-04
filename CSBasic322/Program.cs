@@ -84,6 +84,29 @@ namespace CSBasic322
                         Console.WriteLine("지구에 있는 거 맞냐요?");
                         break;
                 }
+                string input2 = Console.ReadLine();
+                int number = int.Parse(input2);
+                Console.WriteLine(number > 0 ? "자연수" : "자연수 아님");
+                //Console.WriteLine(number > 0 ? a(): b());
+
+                Console.Write("입력: ");
+                string line = Console.ReadLine();
+                if (line.Contains("안녕"))
+                {
+                    Console.WriteLine("너도 안녕");
+                }
+                else if (line.Contains("바보"))
+                {
+                    Console.WriteLine("너가 바보야!");
+                }
+                else if (line.Contains("밥"))
+                {
+                    Console.WriteLine("배고파~!");
+                }
+                else
+                {
+                    Console.WriteLine("심심해!~");
+                }
             }
         }
     }
