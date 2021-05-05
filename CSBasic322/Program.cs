@@ -107,6 +107,30 @@ namespace CSBasic322
                 {
                     Console.WriteLine("심심해!~");
                 }
+
+                ConsoleKeyInfo info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        Console.WriteLine("↑");
+                        break;
+                    case ConsoleKey.DownArrow:
+                        Console.WriteLine("↓");
+                        break;
+                    case ConsoleKey.RightArrow:
+                        Console.WriteLine("→");
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        Console.WriteLine("←");
+                        break;
+                    case ConsoleKey.Escape:
+                        Console.WriteLine("으악");
+                        break;
+
+                    default:
+                        Console.WriteLine("unknown key");
+                        break;
+                }
             }
         }
     }
