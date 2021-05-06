@@ -6,7 +6,11 @@ namespace CsBasic323
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] intArray = new int[100];
+            Console.WriteLine(intArray[0]);
+            Console.WriteLine(intArray[99]);
+            //Console.WriteLine(intArray[100]);
+           // Console.WriteLine(intArray[-1]);
         }
     }
 }
